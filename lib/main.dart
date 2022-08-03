@@ -1,13 +1,14 @@
-import 'package:FoodNutrient/screens/additional_screen/coming_soon_screen%20.dart';
-import 'package:FoodNutrient/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:sizer/sizer.dart';
 
-import 'navigators/home_nav/home_navigator.dart';
-import 'navigators/profile_nav/profile_navigator.dart';
-import 'navigators/search_nav/search_navigator.dart';
+import 'core/navigators/home_nav/home_navigator.dart';
+import 'core/navigators/profile_nav/profile_navigator.dart';
+import 'core/navigators/search_nav/search_navigator.dart';
+import 'core/utils/constants.dart';
+import 'core/utils/common.dart';
+import 'features/authenticated/presentation/screens/additional_screen/coming_soon_screen .dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
           fontFamily: "Signika",
         ),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: MainPage(),
       );
     });

@@ -1,6 +1,6 @@
 
-import '../models/food_category.dart';
-import '../utils/constants.dart';
+import '../core/utils/constants.dart';
+import '../features/authenticated/data/models/food_category.dart';
 
 var foodCategoryList = [
   FoodCategory(

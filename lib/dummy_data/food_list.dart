@@ -1,5 +1,4 @@
-
-import '../models/food_model.dart';
+import '../features/authenticated/data/models/food_model.dart';
 
 var foodList = [
   FoodModel(
