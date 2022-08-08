@@ -1,3 +1,4 @@
+import 'package:FoodNutrient/features/guest/fingerprint_auth/presentation/fingerprint_auth/fingerprint_auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -8,6 +9,7 @@ import 'core/navigators/profile_nav/profile_navigator.dart';
 import 'core/navigators/search_nav/search_navigator.dart';
 import 'core/utils/constants.dart';
 import 'core/utils/common.dart';
+import 'core/utils/fingerprint_auth/fingerprint_auth.dart';
 import 'features/authenticated/presentation/screens/additional_screen/coming_soon_screen .dart';
 
 void main() {
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
-        home: MainPage(),
+        home: FingerprintAuthScreen(),
       );
     });
   }
@@ -43,7 +45,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
